@@ -1,4 +1,4 @@
-from typing import Optional
+from typing import Optional, List
 from sqlmodel import SQLModel, Field, Relationship
 
 
@@ -14,7 +14,8 @@ class Cart(CartBase, table=True):
 
     # Relación inversa
     user: "User" = Relationship(back_populates="cart")
-
+    
+    products: List["Product"] = Relationship(back_populates="cart")
 
 # ---------- MODELOS Pydantic ----------
 

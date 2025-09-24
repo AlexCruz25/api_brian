@@ -13,7 +13,8 @@ class User(UserBase, table=True):
 
     # Relación inversa al carrito (1 a 1)
     cart: Optional["Cart"] = Relationship(back_populates="user")
-
+    
+    
 
 class UserCreate(UserBase):
     password:str

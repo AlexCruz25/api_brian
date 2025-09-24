@@ -3,6 +3,10 @@ from sqlmodel import SQLModel, create_engine, Session
 from typing import Annotated
 from fastapi import Depends
 
+#from app.domain.models.user import User
+#from app.domain.models.cart import Cart
+#from app.domain.models.product import Product
+
 # URL de la base de datos (puede ir en variables de entorno)
 DATABASE_URL = "postgresql+psycopg2://myuser:mypassword@localhost:5433/apiBrian"
 

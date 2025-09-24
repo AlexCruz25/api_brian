@@ -6,6 +6,9 @@ from app.infrastructure.databases.database import engine, create_db_and_tables
 from app.api.router.user import router as user_router
 from app.api.router.cart import router as cart_router
 
+##importacion de models
+from app.domain.models.product import Product
+
 # Crear la app de FastAPI
 app = FastAPI(
     title="API eCommerce",
